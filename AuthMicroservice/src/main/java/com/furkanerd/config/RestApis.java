@@ -13,4 +13,7 @@ public class RestApis {
 
     public static final String LOGIN = "/login";
 
+    // UserMicroservice
+    public static final String CREATE_USER= "/create-user";
+
 }

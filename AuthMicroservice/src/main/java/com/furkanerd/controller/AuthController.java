@@ -3,6 +3,7 @@ package com.furkanerd.controller;
 import com.furkanerd.dto.request.LoginRequestDto;
 import com.furkanerd.dto.request.RegisterRequestDto;
 import com.furkanerd.entity.Auth;
+import com.furkanerd.manager.UserProfileManager;
 import com.furkanerd.service.AuthService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

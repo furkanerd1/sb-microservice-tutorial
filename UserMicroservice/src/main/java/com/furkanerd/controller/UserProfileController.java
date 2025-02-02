@@ -16,7 +16,7 @@ public class UserProfileController {
         this.userProfileService = userProfileService;
     }
 
-    @PostMapping(CREATEUSER)
+    @PostMapping(CREATE_USER)
     public ResponseEntity<Boolean> createUser(@RequestBody CreateUserRequestDto request){
         userProfileService.createUser(request);
         return ResponseEntity.ok(true);
