@@ -42,3 +42,24 @@ docker run --name redis-gui -d -p  8001:8001 redislabs/redisinsight:latest
       @Configuration
       @EnableRedisRepositories
       @EnableCaching
+
+## Create image with Dockerfile
+```bash
+FROM amazoncorretto:22.0.2-alpine3.20
+COPY build/libs/'microservice'-v.0.1.jar app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
+```
+### **1-usage of images which will run on your local**
+```bash
+docker build -t tutorialconfigserver:v01 .
+```
+### **2- if you will publish on docker hub**
+```bash
+docker build -t username/tutorialconfigserver:v01 .
+```
+```bash
+docker build -t username/tutorialauth:v01 .
+```
+```bash
+docker build -t username/tutorialuser:v01 .
+```
