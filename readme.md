@@ -63,3 +63,8 @@ docker build -t username/tutorialauth:v01 .
 ```bash
 docker build -t username/tutorialuser:v01 .
 ```
+
+### To push docker hub
+```bash
+docker image push username/imagename:version
+```
